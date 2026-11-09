@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Listar Produtos</h1>
+
+
+    <div class="menu">
+        <a href="cad_produtos.html">Cadastrar Produtos</a>
+        <a href="clientes.html">Clientes</a> |
+        <a href="vender.html">PDV</a> |
+    </div>
+    <div class="info">
+        <p>Produto : <input id='nomecv' type="text"></p>
+        <p>Quantidade : <input id='quantidadecv' type="number"></p>
+         <button type="button"  onclick="comprar_produto()">Comprar Produto</button>
+          <button type="button"  onclick="vender_produto()">Vender Produto</button>
+          <button type="button"  onclick="deletar_produto()">Deletar Produto</button>
+    </div>
+      <div class="principal" id="div_pro"></div>
+</body>
+
+</html>

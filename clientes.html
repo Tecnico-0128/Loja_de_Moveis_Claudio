@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js"defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manutenção de Clientes</h1>
+    <div class="menu">
+        <a href="cad_clientes.html">Cadastrar Clientes</a> | 
+        <a href="produtos.html" class="ativo">Produtos</a>
+         <a href="vender.html">PDV</a> | 
+    </div>
+    <div class="info">
+         <p>CPF/CNPJ: <input id="cpfbuscarcliente"> <button onclick="buscliente()">Buscar</button></p>
+        <p>Nome: <input id="nomebuscarcliente"></p>
+        <p>Endereço</p>
+        <p>Endereço: <input id="ruabuscarcliente"></p>
+        <p>Numero: <input id="numerobuscarcliente"></p>
+        <p>UF: <input id="ufbuscarcliente"></p>
+        <button onclick="editar_cliente()">Editar Cliente</button>
+        <button onclick="deletar_clientes()">Excluir Cliente</button>
+    </div>
+        <div class="principal" id="div_cli"></div>
+</body>
+</html>

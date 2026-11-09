@@ -1,0 +1,58 @@
+
+body {
+    background-color: lightgray;
+}
+
+.info{
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    background-color: #00070a;
+    color: rgb(247, 244, 244);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu a {
+    color: rgb(61, 61, 238);
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+
+input {
+    width: 40%;
+    padding: 4px;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+
+button {
+    background-color: lightseagreen;
+    color: black;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+.principal {
+    width: 500px;
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid black;
+}
