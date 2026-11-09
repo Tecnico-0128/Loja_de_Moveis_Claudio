@@ -1,18 +1,30 @@
 import { DataTypes } from 'sequelize'
 import sequelize from '../config/database.js'
 
-const cad_produto = sequelize.define('venda', {
+const cad_venda = sequelize.define('venda', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
     },
-    produto: {
+    nome_produto: {
         type: DataTypes.STRING,
         allowNull: false
     },
-    quantidade: {
+    tipo: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    cor: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    quantidade_vendida: {
         type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    preco: {
+        type: DataTypes.DECIMAL(10, 2),
         allowNull: false
     }
 }, {
@@ -20,4 +32,4 @@ const cad_produto = sequelize.define('venda', {
     tableName: 'vendas'
 })
 
-export default cad_produto
+export default cad_venda

@@ -4,6 +4,7 @@ import produto_routes from './routes/produto_routes.js'
 import sequelize from './config/database.js'
 import './models/bd_cliente.js'
 import './models/bd_produto.js'
+import './models/bd_venda.js'
 
 const app = express()
 
@@ -22,6 +23,7 @@ app.use(express.json())
 
 app.use('/cliente', cliente_routes)
 app.use('/produto', produto_routes)
+app.use('/venda', venda_routes)
 
 try {
   await sequelize.authenticate()
