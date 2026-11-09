@@ -1,10 +1,12 @@
 import express from 'express'
 import cliente_routes from './routes/cliente_routes.js'
 import produto_routes from './routes/produto_routes.js'
+import venda_routes from './routes/venda_routes.js'
 import sequelize from './config/database.js'
 import './models/bd_cliente.js'
 import './models/bd_produto.js'
 import './models/bd_venda.js'
+
 
 const app = express()
 
