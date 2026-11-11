@@ -23,6 +23,14 @@ app.use((req, res, next) => {
 
 app.use(express.json())
 
+//mensagem de server funcionando pra verificar na api
+
+app.get('/health', (req, res) => {
+res.json({message: 'Servidor Funcionando.', success: true})
+})
+
+
+
 app.use('/cliente', cliente_routes)
 app.use('/produto', produto_routes)
 app.use('/venda', venda_routes)
