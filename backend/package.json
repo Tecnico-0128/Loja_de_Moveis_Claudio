@@ -1,7 +1,9 @@
+
 {
   "name": "loja_moveis",
   "version": "1.0.0",
   "main": "src/server.js",
+  "type": "module",
   "scripts": {
     "start": "node src/server.js"
   },
@@ -10,5 +12,7 @@
     "sequelize": "^6.37.8",
     "sqlite3": "^6.0.1"
   },
-  "type": "module"
+  "allowScripts": {
+    "sqlite3": true
+  }
 }
